@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp">
+
+    <!-- Affichage du poster -->
+    <ImageView
+        android:id="@+id/imageViewPoster"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        />
+
+    <!-- Titre du film -->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageViewPoster"
+        android:layout_alignTop="@+id/imageViewPoster"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Date de sortie -->
+    <TextView
+        android:id="@+id/txtReleaseDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:layout_toEndOf="@+id/imageViewPoster"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp" />
+
+    <!-- Overview -->
+    <TextView
+        android:id="@+id/txtOverviewLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewPoster"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Overview:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtOverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtOverviewLabel"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="16sp" />
+
+    <!-- Note moyenne -->
+    <TextView
+        android:id="@+id/txtVoteAverageLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtOverview"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Note moyenne:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtVoteAverage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVoteAverageLabel"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="16sp" />
+
+    <!-- Bouton "Regarder Bande annonce" -->
+    <Button
+        android:id="@+id/btTrailer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVoteAverage"
+        android:layout_toEndOf="@+id/imageViewPoster"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Regarder Bande annonce"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
